@@ -17,18 +17,45 @@ npm init -y
 
 # Instalasi Mocha, Chai, dan node-fetch
 npm install mocha chai node-fetch
+```
 
-📁 Struktur Direktori
+## 📁 Struktur Direktori
+
+```
 api-test/
-├── node_modules
-|   └── .....
+├── node_modules/
+│   └── ......
 ├── test/
 │   └── reqres.test.js
 ├── package-lock.json
 ├── package.json
 └── README.md
-
 ```
 
-🧪 Cara Menjalankan Test
-npx mocha test/reqres.test.js
+## 🧪 Cara Menjalankan Test
+
+```bash
+npx mocha ./test/reqres.test.js
+```
+
+## 📋 Contoh Request yang Diuji
+
+1. **GET** `/api/users/2`
+2. **POST** `/api/users`
+3. **PATCH** `/api/users/2`
+4. **DELETE** `/api/users/2`
+
+Semua request menyertakan header:
+
+```http
+x-api-key: reqres-free-v1
+```
+
+## ⚠️ Catatan
+
+- Pastikan API key `x-api-key` masih valid sesuai dokumentasi terbaru dari `reqres.in`.
+- Jika diperlukan, ganti API key dengan environment variable untuk keamanan.
+
+---
+
+Happy testing! 🚀
