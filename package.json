@@ -1,0 +1,20 @@
+{
+  "name": "automated-api-tests",
+  "version": "1.0.0",
+  "description": "Pengujian API otomatis menggunakan Mocha",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^1.10.0",
+    "chai": "^5.2.0",
+    "mocha": "^11.7.0"
+  },
+  "dependencies": {
+    "node-fetch": "^2.7.0"
+  }
+}
